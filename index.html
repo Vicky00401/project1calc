@@ -7,6 +7,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/static/CSS/style.css">
     <title>Calculator</title>
+    <style>
+        .container{
+    text-align: center;
+    margin-top:23px
+}
+
+table{
+    margin: auto;
+}
+
+input{
+    border-radius: 21px;
+    border: 5px solid #244624;
+    font-size:34px;
+    height: 65px;
+    width: 456px;
+}
+
+button{
+    border-radius: 20px;
+    font-size: 40px;
+    background: #978fa0;
+    width: 102px;
+    height: 90px;
+    margin: 6px;
+}
+
+.calculator{ 
+    border: 4px solid #13695d;
+    background-color: #ff99f7;
+    padding: 23px;
+    border-radius: 53px;
+    display: inline-block;
+    
+}
+
+h1{
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+}
+        
+    </style>
 </head>
 
 <body>
@@ -50,12 +92,8 @@
         </div>
     </div>
 
-</body>
-<script src="/static/JS/index.js"></script>
-</html>
-
-index.js
-
+    </body>
+    <script>
 let screen = document.getElementById('screen');
 buttons = document.querySelectorAll('button');
 let screenValue = '';
@@ -81,46 +119,7 @@ for (item of buttons) {
         }
 
     })
-}
-
-style.css
-
-.container{
-    text-align: center;
-    margin-top:23px
-}
-
-table{
-    margin: auto;
-}
-
-input{
-    border-radius: 21px;
-    border: 5px solid #244624;
-    font-size:34px;
-    height: 65px;
-    width: 456px;
-}
-
-button{
-    border-radius: 20px;
-    font-size: 40px;
-    background: #978fa0;
-    width: 102px;
-    height: 90px;
-    margin: 6px;
-}
-
-.calculator{ 
-    border: 4px solid #13695d;
-    background-color: #ff99f7;
-    padding: 23px;
-    border-radius: 53px;
-    display: inline-block;
-    
-}
-
-h1{
-    font-size: 28px;
-    font-family: 'Courier New', Courier, monospace;
-}
+            }
+    </script>
+<script src="/static/JS/index.js"></script>
+</html>
